@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600;&family=Poppins:wgt@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(resources/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 100vh;
+  position: relative;
+}
+.main .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav img {
+  color: red;
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+.nav-end {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+nav .select {
+  height: 30px;
+  width: auto;
+  font-weight: bold;
+  padding: 2px 20px;
+  color: white;
+  background-color: rgba(7, 7, 7, 0.055);
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+nav option {
+  background-color: white;
+  color: black;
+}
+nav button {
+  width: 90px;
+  height: 30px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 10;
+}
+.hero {
+  height: calc(100% - 80px);
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 30px;
+  gap: 23px;
+  text-align: center;
+}
+.hero span:nth-child(1) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero span:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.hero span:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+.login input {
+  height: 56px;
+  width: 250px;
+}
+.login button {
+  height: 56px;
+  width: 150px;
+}
+.separation {
+  height: 7px;
+  background-color: rgb(35, 35, 35);
+  position: relative;
+  z-index: 20;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+.main ::placeholder {
+  font-weight: 700;
+}
+.main input {
+  padding: 0px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  font-weight: 200;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  min-height: 80vh;
+  margin: auto;
+  color: white;
+  overflow: hidden hidden;
+}
+.secimg {
+  position: relative;
+}
+.secimg img {
+  position: relative;
+  z-index: 10;
+  width: 555px;
+}
+.secimg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+.first div :first-child {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+}
+.first div :nth-child(2) {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.faq {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq h2 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.faqbox {
+  width: 80vw;
+  height: auto;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: white;
+  background-color: #2d2d2d;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  height: auto;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.faqbox:hover {
+  background-color: rgba(128, 128, 128, 0.664);
+  color: white;
+}
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 90vw;
+  margin: auto;
+  padding: 1rem;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 98vw;
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+  .secimg img {
+    width: 305px;
+  }
+  .secimg video {
+    width: 305px;
+  }
+  .hero span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .hero span:nth-child(2) {
+    font-size: 1.125rem;
+  }
+  .hero span:nth-child(3) {
+    font-size: 1.125rem;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first div :first-child {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .first div :nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .faq h2 {
+    font-size: 2rem;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 25px;
+  }
+  .footer-item {
+    align-items: start;
+  }
+}
+
+footer .call {
+  padding: 2rem 0;
+}
+footer .call a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer a {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
